@@ -1,0 +1,186 @@
+/*
+ * @package AJAX_Chat
+ * @author Ville 'Nanofus' Talonpoika
+ * @copyright (c) Ville Talonpoika
+ * @license CC BY-NC
+ * @link https://github.com/Nanofus/AJAX-Chat-Material-Style
+ * 
+ * Style inspired by Google's Material Design:
+ * http://www.google.com/design/spec/material-design/introduction.html
+ */
+
+@import url('global.css');
+@import url('fonts.css');
+@import url('print.css');
+
+* {
+	font-family: 'Roboto', sans-serif
+}
+
+@media screen,projection,handheld {
+
+	#content {
+		font-size: 11pt;
+	}
+
+	/* Firefox button padding fix */
+	#content #bbCodeContainer input::-moz-focus-inner, #content #logoutButton::-moz-focus-inner, #content #submitButton::-moz-focus-inner {
+		border:0;
+		padding:0;
+	}
+	
+	/* Buttons */
+	#content #bbCodeContainer input, #content #logoutButton, #content #submitButton, #loginForm #loginButton {
+		background-color:#EEEEEE;
+		color:#333333;
+		border: 0px;
+		box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+		transition: box-shadow 0.2s;
+	}
+	#content #bbCodeContainer input:hover, #content #logoutButton:hover, #content #submitButton:hover, #loginForm #loginButton:hover {
+		background-color:#EEEEEE;
+		color:#333333;
+		border: 0px;
+		box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
+	}
+	#content select, #loginForm select, #loginForm input, #content textarea {
+		background-color:#FFF;
+		color:#333333;
+		border: 0px solid #ababab;
+		box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+		transition: box-shadow 0.2s;
+	}
+	#content select:hover, #loginForm select:hover, #loginForm input:hover, #content textarea:hover {
+		background-color:#FFF;
+		color:#333333;
+		border: 0px solid #ababab;
+		box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
+	}
+	
+	/* Status Icon */
+	#content #statusIconContainer {
+		background-image: url('../img/loading-sprite.png'); 
+	}
+	#content .statusContainerOff {
+		background-position: 0px 0px;
+	}
+	#content .statusContainerOn {
+		background-position: 0px -22px;
+	}
+	#content .statusContainerAlert {
+		background-position: 0px -44px;
+	}
+	
+	/* Headers */
+	#loginContent h1 {
+		color:#333333;
+	}
+	#content #headlineContainer h1 { 
+		color: white;
+		margin-left: 20px;
+	}
+	#content #onlineListContainer h3, #content #helpContainer h3, #content #settingsContainer h3 {
+		background-color:#2196F3;
+		color:#fff;
+		height: 25px;
+		box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+	}
+	
+	/* Other Theme Elements */
+	#content #chatList, #content #onlineListContainer, #content #helpContainer, #content #settingsContainer, #content #colorCodesContainer {
+		border: 0px;
+		box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+	}
+	#content #chatList .deleteSelected {
+		border-width:0px;
+	}
+	#content #helpContainer #helpList table, #content #settingsContainer #settingsList table {
+		border-collapse:collapse;
+	}
+	#loginContent {
+		background-color:#FAFAFA;
+		color:#28313F;
+	}
+	#loginContent a {
+		color:#333333;
+	}
+	#loginContent input, #loginContent select {
+		background-color:#FFF;
+		color:#333333;
+	}
+	#loginContent #loginFormContainer #loginButton {
+		background-color:#F7F5F1;
+		color:#333333;
+	}
+	#loginContent #errorContainer {
+		color:red;
+	}
+	#content #headlineContainer { 
+		top: 0;
+		left: 0;
+		width: 100%;
+		height: 40px;
+		background: #2196F3;
+		box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+	}
+	#content #copyright, #content #copyright a {
+		color: white;
+	}
+	#content {
+		background-color:#FAFAFA;
+		color:#28313F;
+	}
+	#content a {
+		color:#333333;
+	}
+	#content #chatList, #content #onlineListContainer, #content #helpContainer, #content #settingsContainer, #content #colorCodesContainer, #content #emoticonsContainer {
+		background-color:#FFF;
+	}
+	#content #colorCodesContainer {
+		box-shadow: 2px 2px 2px #777; 
+	}
+	#content #colorCodesContainer a {
+		border-color:black;
+	}
+	#content #optionsContainer input {
+	    background-color:transparent;
+	}
+	#content .rowEven {
+		background-color:#ECEFF1;
+		border-bottom: 1px;
+		border-color: #EEEEEE;
+	}
+	#content .rowOdd {
+		background-color:#F5F5F5;
+		border-bottom: 1px;
+		border-color: #EEEEEE;
+	}
+	#content .guest {
+		color:#616161;
+	}
+	#content .user {
+		color:#1976D2;
+	}
+	#content .wizard {
+		color:#7B1FA2;
+	}
+	#content .moderator {
+		color:#388E3C;
+	}
+	#content .admin {
+		color:#D32F2F;
+	}
+	#content .chatBot {
+		color:#F57C00;
+	}
+	#content #chatList .chatBotErrorMessage {
+		color:#D32F2F;
+	}
+	#content #chatList a {
+		color:#1E88E5;
+	}
+	#content #chatList .deleteSelected {
+		border-color:#D32F2F;
+	}
+	
+}
