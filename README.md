@@ -1,5 +1,5 @@
 # AJAX-Chat-Material-Style
-A stylesheet + icons for Blueimp's [AJAX Chat](https://frug.github.io/AJAX-Chat/) inspired by [Google Material Design](http://www.google.com/design/spec/material-design/introduction.html). Still work in progress!
+A stylesheet + icons for Blueimp's [AJAX Chat](https://frug.github.io/AJAX-Chat/) ([GitHub page](https://github.com/Frug/AJAX-Chat)) inspired by [Google Material Design](http://www.google.com/design/spec/material-design/introduction.html). Still work in progress!
 ## Installation instructions
 * Add the following line inside the `<head>` element in /lib/template/LoggedIn.html and /lib/template/LoggedOut.html:
 `<link href='http://fonts.googleapis.com/css?family=Roboto' rel='stylesheet' type='text/css'>`
